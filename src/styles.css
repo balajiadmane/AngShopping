@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+nav{
+    box-shadow: 0px 3px 4px #eae9e9;
+    position: fixed;
+    z-index: 9;
+    width: 100%;
+    background-color: white;
+}
+
+.btn{
+
+    box-shadow: 2px 3px 9px 3px #d2cfcf;
+}

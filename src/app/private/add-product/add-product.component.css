@@ -1,0 +1,10 @@
+input {
+    border-radius: unset;
+}
+textarea{
+    border-radius: unset;
+}
+
+#product-add-form{
+    margin-top: 4%;
+}

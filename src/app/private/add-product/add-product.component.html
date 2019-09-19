@@ -1,0 +1,31 @@
+<div class="row">
+  <div class="col-md-4"></div>
+  <div class="col-md-4">
+      <form id="product-add-form" #product="ngForm" (ngSubmit)="addProduct(product.value)">
+
+          <div class="form-group">
+            <input type="text" name="Product_name" placeholder="Product name" class="form-control" ngModel>
+          </div>
+        
+          <div class="form-group">
+            <label>Product description:</label>
+            <textarea ngModel name="Product_descr" class="form-control" rows="4">
+        
+            </textarea>
+          </div>
+        
+          <div class="form-group">
+            <label>Product price:</label>
+            <input type="text" name="Product_price" placeholder="Product price" class="form-control" ngModel>
+          </div>
+          <input type="submit" class="btn btn-primary" style="float: right;" value="Send">
+        </form>
+        <div *ngFor="let msg of alert" [class]="msg.msgClass">
+          {{msg.message}}
+        </div>
+  </div>
+
+  <div class="col-md-4">
+
+  </div>
+</div>
